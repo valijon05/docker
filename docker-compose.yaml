@@ -26,7 +26,8 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: laravel  # Create a database named 'laravel'
-      MYSQL_ROOT_PASSWORD: root  # Set the root password for MySQL
+      MYSQL_ROOT_PASSWORD: root # Set the root password for MySQL
+
     volumes:
       - mysql_data:/var/lib/mysql  # Persist MySQL data
     networks:
